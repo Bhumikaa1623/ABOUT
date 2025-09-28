@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bhumikaa Balamurali | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">Bhumikaa's Portfolio</div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+<section class="hero" id="home" data-tilt data-tilt-max="10">
+  <div class="hero-content text-center">
+    <h1 class="text-4xl font-bold mb-4">Bhumikaa Balamurali</h1>
+    <p class="text-xl mb-6">AI/ML Enthusiast | Tech Explorer | Innovator</p>
+
+    <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+      <a href="resume/New resume.pdf" class="btn bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Download Resume</a>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- About -->
+  <section id="about" class="section" data-aos="fade-up">
+    <div class="about-container">
+      <div class="about-card">
+        <img src="images/me.jpeg" alt="Bhumikaa Balamurali" class="profile-pic" onclick="openImagePopup('images/me.jpeg')">
+      </div>
+      <!-- Fullscreen Image Popup -->
+<div id="imagePopup" class="popup" onclick="closeImagePopup()">
+  <span class="close-btn">&times;</span>
+  <img class="popup-content" id="popupImg">
+</div>
+<script>
+  function openImagePopup(src) {
+    document.getElementById("popupImg").src = src;
+    document.getElementById("imagePopup").style.display = "block";
+  }
+
+  function closeImagePopup() {
+    document.getElementById("imagePopup").style.display = "none";
+  }
+</script>
+
+
+
+      <div class="content">
+        <h2>About Me</h2>
+        <p>
+        
+        I'm Bhumikaa Balamurali to be  AI/ML engineer — a curious mind passionate about learning, solving real-world problems,building impactful solutions, and creating meaningful impact through technology.
+        I enjoy exploring how AI and data can transform everyday lives. 
+        When I’m not coding, you’ll find me reflecting, sketching ideas, or diving into something new and exciting. 
+        I believe in staying curious, being kind, and growing a little every day.
+      </p>
+    </div>
+    </p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section" data-aos="fade-right">
+    <h2>My Projects</h2>
+    <div class="project-card" data-tilt>
+      <h3>Smart MycoPurifier</h3>
+      <p>A sustainable air-purifier using fungi and AI monitoring.</p>
+    </div>
+    <div class="project-card" data-tilt>
+      <h3>SensaBand</h3>
+      <p>AI-powered wearable to detect stress & cognitive fatigue.</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section" data-aos="zoom-in">
+    <div class="skills-header">
+      <h2>Skills</h2>
+      <p>Technologies I work with:</p>
+    <ul class="skills-list">
+      <li>Python</li>
+      <li>Machine Learning</li>
+      <li>Django</li>
+      <li>Java</li>
+      <li>C Programming</li>
+      <li>HTML/CSS/JS</li>
+    </ul>
+    </div>
+  </section>
+
+  <!-- Contact -->
+<section id="contact" class="section">
+  <div class="contact-container">
+    <h2>Contact Me</h2>
+    <div class="contact-item">
+      <span class="label">Email:</span>
+      <a href="mailto:bhumibalamurali@gmail.com">bhumibalamurali@gmail.com</a>
+    </div>
+    <div class="contact-item">
+      <span class="label">LinkedIn:</span>
+      <a href="https://www.linkedin.com/in/bhumikaa-b-40a875325" target="_blank">linkedin.com/in/bhumikaa</a>
+    </div>
+  </div>
+</section>
+
+
+  <footer>
+    <p>&copy; 2025 Bhumikaa Balamurali | All rights reserved.</p>
+  </footer>
+
+  <script src="vanilla-tilt.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
