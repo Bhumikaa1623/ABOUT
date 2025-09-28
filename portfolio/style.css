@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background: #111;
+  color: white;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+section {
+  min-height: 100vh; /* Each section fills full screen */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  scroll-snap-align: start;
+}
+
+.hero {
+  background: linear-gradient(135deg, #007bff, #00c2ff);
+  color: white;
+}
+
+.about {
+  background: #f8f9fa;
+}
+
+.projects {
+  background: #e9ecef;
+}
+
+.skills {
+  background: #dee2e6;
+}
+
+.content {
+  max-width: 800px;
+  text-align: center;
+}
+
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(to right, #111, #1e1e1e);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2em;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.hero-content {
+  text-align: center;
+  padding: 2em;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em; /* Adds space between buttons */
+  margin-top: 1em;
+}
+
+.hero .btn {
+  background: #007bff;
+  color: white;
+  padding: 0.7em 1.2em;
+  text-decoration: none;
+  border-radius: 8px;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.hero .btn:hover {
+  background: #0056b3;
+}
+
+.section {
+  padding: 5em 2em;
+  text-align: center;
+}
+
+.project-card {
+  background: white;
+  margin: 1em auto;
+  padding: 1.5em;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  border-radius: 12px;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: rotateY(10deg);
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 2em;
+}
+
+.skills-list li {
+  list-style: none;
+  background: #007bff;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 20px;
+}
+
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 2em 1em;
+}
+#contact {
+  background-color: #f9f9f9;
+  padding: 2em;
+  text-align: left;
+}
+
+#contact h2 {
+  font-size: 1.8em;
+  margin-bottom: 1em;
+  color: #333;
+}
+
+#contact p {
+  font-size: 1em;
+  margin: 0.5em 0;
+  color: #555;
+}
+
+#contact a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+  .skills-header {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+
+  .skills-header h2 {
+    font-size: 2em;
+    color: #333;
+  }
+
+  .skills-header p {
+    color: #555;
+    font-size: 1.1em;
+  }
+  /* === About Section Styling === */
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4em 2em;
+  min-height: 100vh;
+  background: linear-gradient(to right, #f8f9fa, #e8ecf1);
+}
+
+.about-container {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  padding: 2em;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.about-container:hover {
+  transform: scale(1.02);
+}
+
+.about-card img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #e0e0e0;
+  margin-bottom: 1.5em;
+}
+
+
+.content h2 {
+  font-size: 2rem;
+  margin-bottom: 0.8em;
+  color: #333;
+}
+
+.content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  margin: 0;
+}
+  .about-container:hover .content h2 {
+    color: #007bff;
+  }
+
+  /* Popup container */
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Popup image */
+.popup-content {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 10px;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 30px;
+  right: 45px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+ 
